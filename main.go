@@ -10,6 +10,7 @@ import (
 
 func main() {
 	myFigure := figure.NewColorFigure("<USERNAME> is Awesome!!!", "larry3d", "yellow", true)
+	fmt.Println("Checking cheking")
 
 	if secret := os.Getenv("SECRET"); secret != "" {
 		myFigure = figure.NewColorFigure(fmt.Sprintf("Secret value is: %s", secret), "larry3d", "yellow", true)
